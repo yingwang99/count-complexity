@@ -1,0 +1,194 @@
+Configuring distributed-process-0.6.6...
+Building distributed-process-0.6.6...
+Preprocessing library distributed-process-0.6.6...
+[ 1 of 28] Compiling Control.Distributed.Process.Internal.StrictContainerAccessors ( src/Control/Distributed/Process/Internal/StrictContainerAccessors.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Internal/StrictContainerAccessors.o )
+[ 2 of 28] Compiling Control.Distributed.Process.Internal.WeakTQueue ( src/Control/Distributed/Process/Internal/WeakTQueue.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Internal/WeakTQueue.o )
+[ 3 of 28] Compiling Control.Distributed.Process.Internal.StrictList ( src/Control/Distributed/Process/Internal/StrictList.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Internal/StrictList.o )
+[ 4 of 28] Compiling Control.Distributed.Process.Internal.StrictMVar ( src/Control/Distributed/Process/Internal/StrictMVar.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Internal/StrictMVar.o )
+[ 5 of 28] Compiling Control.Distributed.Process.Internal.CQueue ( src/Control/Distributed/Process/Internal/CQueue.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Internal/CQueue.o )
+[ 6 of 28] Compiling Control.Distributed.Process.Internal.BiMultiMap ( src/Control/Distributed/Process/Internal/BiMultiMap.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Internal/BiMultiMap.o )
+[ 7 of 28] Compiling Control.Distributed.Process.Serializable ( src/Control/Distributed/Process/Serializable.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Serializable.o )
+[ 8 of 28] Compiling Control.Distributed.Process.Internal.Types ( src/Control/Distributed/Process/Internal/Types.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Internal/Types.o )
+
+/var/folders/fs/323b5nqn5hjf94x02r4wfhg80000gn/T/ghc65300_0/ghc_13.hscpp:743:10: warning: [-Wredundant-constraints]
+    • Redundant constraint: NFData a
+    • In the instance declaration for ‘NFData (SendPort a)’
+[ 9 of 28] Compiling Control.Distributed.Process.Management.Internal.Types ( src/Control/Distributed/Process/Management/Internal/Types.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Management/Internal/Types.o )
+[10 of 28] Compiling Control.Distributed.Process.Internal.Messaging ( src/Control/Distributed/Process/Internal/Messaging.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Internal/Messaging.o )
+[11 of 28] Compiling Control.Distributed.Process.UnsafePrimitives ( src/Control/Distributed/Process/UnsafePrimitives.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/UnsafePrimitives.o )
+[12 of 28] Compiling Control.Distributed.Process.Management.Internal.Bus ( src/Control/Distributed/Process/Management/Internal/Bus.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Management/Internal/Bus.o )
+[13 of 28] Compiling Control.Distributed.Process.Management.Internal.Trace.Types ( src/Control/Distributed/Process/Management/Internal/Trace/Types.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Management/Internal/Trace/Types.o )
+
+src/Control/Distributed/Process/Management/Internal/Trace/Types.hs:163:3: warning: [-Wunused-top-binds]
+    Defined but not used: ‘uod’
+[14 of 28] Compiling Control.Distributed.Process.Internal.Primitives ( src/Control/Distributed/Process/Internal/Primitives.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Internal/Primitives.o )
+
+/var/folders/fs/323b5nqn5hjf94x02r4wfhg80000gn/T/ghc65300_0/ghc_9.hscpp:667:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Serializable a
+    • In the type signature for:
+           receiveChan :: Serializable a => ReceivePort a -> Process a
+
+/var/folders/fs/323b5nqn5hjf94x02r4wfhg80000gn/T/ghc65300_0/ghc_9.hscpp:672:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Serializable a
+    • In the type signature for:
+           receiveChanTimeout :: Serializable a =>
+                                 Int -> ReceivePort a -> Process (Maybe a)
+
+/var/folders/fs/323b5nqn5hjf94x02r4wfhg80000gn/T/ghc65300_0/ghc_9.hscpp:682:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Serializable a
+    • In the type signature for:
+           mergePortsBiased :: Serializable a =>
+                               [ReceivePort a] -> Process (ReceivePort a)
+
+/var/folders/fs/323b5nqn5hjf94x02r4wfhg80000gn/T/ghc65300_0/ghc_9.hscpp:687:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Serializable a
+    • In the type signature for:
+           mergePortsRR :: Serializable a =>
+                           [ReceivePort a] -> Process (ReceivePort a)
+
+/var/folders/fs/323b5nqn5hjf94x02r4wfhg80000gn/T/ghc65300_0/ghc_9.hscpp:1341:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Serializable a
+    • In the type signature for:
+           monitorPort :: Serializable a => SendPort a -> Process MonitorRef
+[15 of 28] Compiling Control.Distributed.Process.Internal.Closure.BuiltIn ( src/Control/Distributed/Process/Internal/Closure/BuiltIn.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Internal/Closure/BuiltIn.o )
+
+src/Control/Distributed/Process/Internal/Closure/BuiltIn.hs:142:5: warning: [-Wredundant-constraints]
+    • Redundant constraint: Typeable a
+    • In the type signature for:
+           decodeDictStatic :: Typeable a1 =>
+                               Static (SerializableDict a1 -> ByteString -> a1)
+      In an equation for ‘staticDecode’:
+          staticDecode dict
+            = decodeDictStatic `staticApply` dict
+            where
+                decodeDictStatic ::
+                  Typeable a => Static (SerializableDict a -> ByteString -> a)
+                decodeDictStatic = staticLabel "$decodeDict"
+
+src/Control/Distributed/Process/Internal/Closure/BuiltIn.hs:154:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Typeable a
+    • In the type signature for:
+           sdictSendPort :: Typeable a =>
+                            Static (SerializableDict a)
+                            -> Static (SerializableDict (SendPort a))
+
+src/Control/Distributed/Process/Internal/Closure/BuiltIn.hs:159:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Typeable a
+    • In the type signature for:
+           sdictStatic :: Typeable a =>
+                          Static (TypeableDict a) -> Static (SerializableDict (Static a))
+
+src/Control/Distributed/Process/Internal/Closure/BuiltIn.hs:163:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Typeable a
+    • In the type signature for:
+           sdictClosure :: Typeable a =>
+                           Static (TypeableDict a) -> Static (SerializableDict (Closure a))
+
+src/Control/Distributed/Process/Internal/Closure/BuiltIn.hs:180:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Typeable a
+    • In the type signature for:
+           returnProcessStatic :: Typeable a => Static (a -> Process a)
+
+src/Control/Distributed/Process/Internal/Closure/BuiltIn.hs:188:1: warning: [-Wredundant-constraints]
+    • Redundant constraints: (Typeable a,
+                              Typeable b,
+                              Typeable c,
+                              Typeable d)
+    • In the type signature for:
+           splitCP :: (Typeable a, Typeable b, Typeable c, Typeable d) =>
+                      CP a c -> CP b d -> CP (a, b) (c, d)
+
+src/Control/Distributed/Process/Internal/Closure/BuiltIn.hs:210:5: warning: [-Wredundant-constraints]
+    • Redundant constraints: (Typeable a, Typeable b)
+    • In the type signature for:
+           seqProcessStatic :: (Typeable a1, Typeable b1) =>
+                               Static (Process a1 -> Process b1 -> Process b1)
+      In an equation for ‘seqCP’:
+          seqCP p q
+            = seqProcessStatic `closureApplyStatic` p `closureApply` q
+            where
+                seqProcessStatic ::
+                  (Typeable a, Typeable b) =>
+                  Static (Process a -> Process b -> Process b)
+                seqProcessStatic = staticLabel "$seqProcess"
+
+src/Control/Distributed/Process/Internal/Closure/BuiltIn.hs:219:5: warning: [-Wredundant-constraints]
+    • Redundant constraints: (Typeable a, Typeable b)
+    • In the type signature for:
+           bindProcessStatic :: (Typeable a, Typeable b) =>
+                                Static (Process a -> (a -> Process b) -> Process b)
+      In an equation for ‘bindCP’:
+          bindCP x f
+            = bindProcessStatic `closureApplyStatic` x `closureApply` f
+            where
+                bindProcessStatic ::
+                  (Typeable a, Typeable b) =>
+                  Static (Process a -> (a -> Process b) -> Process b)
+                bindProcessStatic = staticLabel "$bindProcess"
+
+src/Control/Distributed/Process/Internal/Closure/BuiltIn.hs:254:5: warning: [-Wredundant-constraints]
+    • Redundant constraint: Typeable a
+    • In the type signature for:
+           sendDictStatic :: Typeable a =>
+                             Static (SerializableDict a -> ProcessId -> a -> Process ())
+      In an equation for ‘cpSend’:
+          cpSend dict pid
+            = closure decoder (encode pid)
+            where
+                decoder :: Static (ByteString -> a -> Process ())
+                decoder
+                  = (sendDictStatic `staticApply` dict)
+                    `staticCompose` decodeProcessIdStatic
+                sendDictStatic ::
+                  Typeable a =>
+                  Static (SerializableDict a -> ProcessId -> a -> Process ())
+                sendDictStatic = staticLabel "$sendDict"
+
+src/Control/Distributed/Process/Internal/Closure/BuiltIn.hs:262:5: warning: [-Wredundant-constraints]
+    • Redundant constraint: Typeable a
+    • In the type signature for:
+           expectDictStatic :: Typeable a1 =>
+                               Static (SerializableDict a1 -> Process a1)
+      In an equation for ‘cpExpect’:
+          cpExpect dict
+            = staticClosure (expectDictStatic `staticApply` dict)
+            where
+                expectDictStatic ::
+                  Typeable a => Static (SerializableDict a -> Process a)
+                expectDictStatic = staticLabel "$expectDict"
+
+src/Control/Distributed/Process/Internal/Closure/BuiltIn.hs:271:5: warning: [-Wredundant-constraints]
+    • Redundant constraint: Typeable a
+    • In the type signature for:
+           newChanDictStatic :: Typeable a1 =>
+                                Static
+                                  (SerializableDict a1 -> Process (SendPort a1, ReceivePort a1))
+      In an equation for ‘cpNewChan’:
+          cpNewChan dict
+            = staticClosure (newChanDictStatic `staticApply` dict)
+            where
+                newChanDictStatic ::
+                  Typeable a =>
+                  Static (SerializableDict a -> Process (SendPort a, ReceivePort a))
+                newChanDictStatic = staticLabel "$newChanDict"
+[16 of 28] Compiling Control.Distributed.Process.Internal.Spawn ( src/Control/Distributed/Process/Internal/Spawn.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Internal/Spawn.o )
+[17 of 28] Compiling Control.Distributed.Process.Internal.Closure.TH ( src/Control/Distributed/Process/Internal/Closure/TH.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Internal/Closure/TH.o )
+[18 of 28] Compiling Control.Distributed.Process.Management.Internal.Trace.Primitives ( src/Control/Distributed/Process/Management/Internal/Trace/Primitives.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Management/Internal/Trace/Primitives.o )
+[19 of 28] Compiling Control.Distributed.Process.Management.Internal.Trace.Tracer ( src/Control/Distributed/Process/Management/Internal/Trace/Tracer.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Management/Internal/Trace/Tracer.o )
+[20 of 28] Compiling Control.Distributed.Process.Management.Internal.Trace.Remote ( src/Control/Distributed/Process/Management/Internal/Trace/Remote.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Management/Internal/Trace/Remote.o )
+[21 of 28] Compiling Control.Distributed.Process.Management.Internal.Table ( src/Control/Distributed/Process/Management/Internal/Table.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Management/Internal/Table.o )
+[22 of 28] Compiling Control.Distributed.Process.Management ( src/Control/Distributed/Process/Management.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Management.o )
+[23 of 28] Compiling Control.Distributed.Process.Management.Internal.Agent ( src/Control/Distributed/Process/Management/Internal/Agent.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Management/Internal/Agent.o )
+[24 of 28] Compiling Control.Distributed.Process.Node ( src/Control/Distributed/Process/Node.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Node.o )
+
+/var/folders/fs/323b5nqn5hjf94x02r4wfhg80000gn/T/ghc65300_0/ghc_17.hscpp:367:1: warning: [-Wunused-imports]
+    The import of ‘Data.List’ is redundant
+      except perhaps to import instances from ‘Data.List’
+    To import instances alone, use: import Data.List()
+[25 of 28] Compiling Control.Distributed.Process.Debug ( src/Control/Distributed/Process/Debug.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Debug.o )
+[26 of 28] Compiling Control.Distributed.Process ( src/Control/Distributed/Process.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process.o )
+[27 of 28] Compiling Control.Distributed.Process.Internal.Closure.Explicit ( src/Control/Distributed/Process/Internal/Closure/Explicit.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Internal/Closure/Explicit.o )
+[28 of 28] Compiling Control.Distributed.Process.Closure ( src/Control/Distributed/Process/Closure.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Closure.o )
+Installing library in
+/Users/cassie/count-lines/.stack-work/install/x86_64-osx/lts-7.18/8.0.1/lib/x86_64-osx-ghc-8.0.1/distributed-process-0.6.6-BybB0vPvnJs1n9CvDy3SBJ
+Registering distributed-process-0.6.6...

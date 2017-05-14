@@ -1,0 +1,38 @@
+Configuring distributed-process-simplelocalnet-0.2.3.3...
+Building distributed-process-simplelocalnet-0.2.3.3...
+Preprocessing library distributed-process-simplelocalnet-0.2.3.3...
+[1 of 2] Compiling Control.Distributed.Process.Backend.SimpleLocalnet.Internal.Multicast ( src/Control/Distributed/Process/Backend/SimpleLocalnet/Internal/Multicast.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Backend/SimpleLocalnet/Internal/Multicast.o )
+
+/var/folders/fs/323b5nqn5hjf94x02r4wfhg80000gn/T/ghc4091_0/ghc_3.hscpp:230:1: warning: [-Wunused-imports]
+    The import of ‘Data.Function’ is redundant
+      except perhaps to import instances from ‘Data.Function’
+    To import instances alone, use: import Data.Function()
+[2 of 2] Compiling Control.Distributed.Process.Backend.SimpleLocalnet ( src/Control/Distributed/Process/Backend/SimpleLocalnet.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Control/Distributed/Process/Backend/SimpleLocalnet.o )
+
+/var/folders/fs/323b5nqn5hjf94x02r4wfhg80000gn/T/ghc4091_0/ghc_1.hscpp:484:3: warning: [-Wdeprecations]
+    In the use of ‘bracket’
+    (imported from Control.Distributed.Process, but defined in Control.Distributed.Process.Internal.Primitives):
+    Deprecated: "Use Control.Monad.Catch.bracket instead"
+
+/var/folders/fs/323b5nqn5hjf94x02r4wfhg80000gn/T/ghc4091_0/ghc_1.hscpp:554:16: warning: [-Wdeprecations]
+    In the use of ‘try’
+    (imported from Control.Distributed.Process, but defined in Control.Distributed.Process.Internal.Primitives):
+    Deprecated: "Use Control.Monad.Catch.mask_ instead"
+
+/var/folders/fs/323b5nqn5hjf94x02r4wfhg80000gn/T/ghc4091_0/ghc_1.hscpp:558:26: warning: [-Wdeprecations]
+    In the use of ‘try’
+    (imported from Control.Distributed.Process, but defined in Control.Distributed.Process.Internal.Primitives):
+    Deprecated: "Use Control.Monad.Catch.mask_ instead"
+
+/var/folders/fs/323b5nqn5hjf94x02r4wfhg80000gn/T/ghc4091_0/ghc_1.hscpp:576:3: warning: [-Wdeprecations]
+    In the use of ‘bracket’
+    (imported from Control.Distributed.Process, but defined in Control.Distributed.Process.Internal.Primitives):
+    Deprecated: "Use Control.Monad.Catch.bracket instead"
+
+/var/folders/fs/323b5nqn5hjf94x02r4wfhg80000gn/T/ghc4091_0/ghc_1.hscpp:623:37: warning: [-Wdeprecations]
+    In the use of ‘finally’
+    (imported from Control.Distributed.Process, but defined in Control.Distributed.Process.Internal.Primitives):
+    Deprecated: "Use Control.Monad.Catch.finally instead"
+Installing library in
+/Users/cassie/count-lines/.stack-work/install/x86_64-osx/lts-7.18/8.0.1/lib/x86_64-osx-ghc-8.0.1/distributed-process-simplelocalnet-0.2.3.3-LFBmC3w5uFYLCyeq6OPF6H
+Registering distributed-process-simplelocalnet-0.2.3.3...

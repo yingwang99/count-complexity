@@ -1,0 +1,15 @@
+Configuring network-multicast-0.2.0...
+Building network-multicast-0.2.0...
+Preprocessing library network-multicast-0.2.0...
+[1 of 1] Compiling Network.Multicast ( .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Network/Multicast.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Network/Multicast.o )
+
+src/Network/Multicast.hsc:76:50: warning: [-Wdeprecations]
+    In the use of ‘sClose’ (imported from Network.Socket):
+    Deprecated: "use 'close'"
+
+src/Network/Multicast.hsc:91:7: warning: [-Wdeprecations]
+    In the use of ‘bindSocket’ (imported from Network.Socket):
+    Deprecated: "use 'bind'"
+Installing library in
+/Users/cassie/count-lines/.stack-work/install/x86_64-osx/lts-7.18/8.0.1/lib/x86_64-osx-ghc-8.0.1/network-multicast-0.2.0-HmmfP98ony4GIy9YDhxRjf
+Registering network-multicast-0.2.0...

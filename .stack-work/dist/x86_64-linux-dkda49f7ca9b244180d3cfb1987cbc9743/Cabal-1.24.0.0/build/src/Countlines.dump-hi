@@ -1,0 +1,189 @@
+
+==================== FINAL INTERFACE ====================
+2017-03-06 08:31:11.861489477 UTC
+
+interface count-lines-0.1.0.0-FiPWgyTv7Fj4IW3tFWV1bX:Countlines 8001
+  interface hash: d6c2e4fbf92851d3d6054c645ff4823c
+  ABI hash: 662c95e9ac60972e677b74f3a10d7297
+  export-list hash: 5d022ee2e1642aca61002aa168d252c5
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 1ecfae9c3c4f1c101cc39850655b8bbb
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Countlines.countLines
+  Countlines.countLinesInDirectory
+  Countlines.countLinesInFile
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.0.0*
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 directory-1.2.6.2@directory-1.2.6.2
+                      filepath-1.4.1.0@filepath-1.4.1.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 time-1.6.0.1@time-1.6.0.1
+                      unix-2.7.2.0@unix-2.7.2.0
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Complex base-4.9.0.0:Data.Either
+                         base-4.9.0.0:Data.Functor.Const base-4.9.0.0:Data.Functor.Identity
+                         base-4.9.0.0:Data.List.NonEmpty base-4.9.0.0:Data.Monoid
+                         base-4.9.0.0:Data.Semigroup base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:Data.Version base-4.9.0.0:Data.Void
+                         base-4.9.0.0:GHC.Exts base-4.9.0.0:GHC.Generics
+                         base-4.9.0.0:GHC.IO.Exception base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Control.Monad 7767aebfd53f0b584cef2fe66ad3986c
+import  -/  base-4.9.0.0:Data.Foldable 8aeb682f6c74f97fcf0ace0d608a43ea
+import  -/  base-4.9.0.0:Data.List 49b86831b79b49ce5d4d9416ecba61df
+import  -/  base-4.9.0.0:Data.OldList 0058409f994fb13ae0616e3f1e5b4dae
+import  -/  base-4.9.0.0:Data.Traversable 7ce5b7ee67475ac3d03ae825b86efd9f
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Real 08bf4acb5f2508f89d6fbcd57fe232e9
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  base-4.9.0.0:System.Environment ee0914a962f5508d0fd404c89ee4999b
+import  -/  base-4.9.0.0:System.IO eb1d40aa793a4047069a5023f2ebcfe3
+import  -/  directory-1.2.6.2@directory-1.2.6.2:System.Directory f7c57c4a392d1767b38addc37d00ceed
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 7378e41b7749213c8c88ceb6b0665d4c
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 62c0e736506aac47ef40569f5b82e19d
+2136f798404c77b0d7043639fb4f1eed
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Countlines.$trModule2
+                   Countlines.$trModule1) -}
+54fd8b7b4ad77753738b9006f788deac
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Countlines"#) -}
+bfe1fe74990e7b187dd3579a95d57bab
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "count-lines-0.1.0.0-FiPWgyTv7Fj4IW3tFWV1bX"#) -}
+d1d0985986385a3dabb769a681c7a18c
+  countLines ::
+    [GHC.Base.String] -> GHC.Types.IO GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Countlines.countLines1
+                  `cast`
+                (<[GHC.Base.String]>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Integer.Type.Integer>_R)) -}
+7c88eb6a80148eefa85efd119f21aa2c
+  countLines1 ::
+    [GHC.Base.String]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Integer.Type.Integer #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (ds :: [GHC.Base.String])
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case ds of wild {
+                   []
+                   -> case GHC.IO.Handle.Text.hPutStr2
+                             GHC.IO.Handle.FD.stdout
+                             Countlines.countLines8
+                             GHC.Types.True
+                             eta of ds1 { (#,#) ipv ipv1 ->
+                      case GHC.IO.Handle.Text.hPutStr2
+                             GHC.IO.Handle.FD.stdout
+                             Countlines.countLines7
+                             GHC.Types.True
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      case GHC.IO.Handle.Text.hPutStr2
+                             GHC.IO.Handle.FD.stdout
+                             Countlines.countLines6
+                             GHC.Types.True
+                             ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                      (# ipv4, Countlines.countLines5 #) } } }
+                   : filename ds1
+                   -> case ds1 of wild1 {
+                        [] -> Countlines.countLines4 filename eta
+                        : txt ds2
+                        -> case ds2 of wild2 {
+                             [] -> Countlines.countLines3 filename txt eta
+                             : ipv ipv1
+                             -> case GHC.IO.Handle.Text.hPutStr2
+                                       GHC.IO.Handle.FD.stdout
+                                       Countlines.countLines2
+                                       GHC.Types.True
+                                       eta of ds3 { (#,#) ipv2 ipv3 ->
+                                (# ipv2, Countlines.countLines5 #) } } } }) -}
+43b0b78444a1f40ce05adf93c0e9a3a2
+  countLines2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Invalid parameters!"#) -}
+4e77ec53bb0d6346bead760a0d1ccc32
+  countLines3 ::
+    GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Integer.Type.Integer #)
+  {- Arity: 3, Strictness: <L,U><L,U><S,U> -}
+04b4928a24d56a5558cdbdeb8d8a6e2d
+  countLines4 ::
+    GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Integer.Type.Integer #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (filename :: GHC.Base.String)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.IO.Handle.FD.openFile1
+                        filename
+                        GHC.IO.IOMode.ReadMode
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.Text.hGetContents1
+                        ipv1
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 (# ipv2,
+                    case GHC.List.$wlenAcc
+                           @ [GHC.Types.Char]
+                           (Data.OldList.lines ipv3)
+                           0# of ww2 { DEFAULT ->
+                    GHC.Integer.Type.smallInteger ww2 } #) } }) -}
+67e695bd1fdff7954437c22a67b88556
+  countLines5 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (-1) -}
+83b46359d299f24480c569abc8057172
+  countLines6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "CountLines directory_path txt  : Count the lines of the files whose names are suffixed with txt under the directory specified recursively"#) -}
+3342d286c5c0d4ae0daada96998b77f2
+  countLines7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "CountLines file_path           : Count the lines of the file specified"#) -}
+316f87e336fe6657b6a0e299cb85a37c
+  countLines8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Usage:"#) -}
+967ef7aa81fc4b94fb52598d37e9f987
+  countLinesInDirectory ::
+    GHC.Base.String
+    -> GHC.Base.String -> GHC.Types.IO GHC.Integer.Type.Integer
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Countlines.countLines3
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R <GHC.Base.String>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Integer.Type.Integer>_R)) -}
+1ae435928e36457950948cc5dfa1a987
+  countLinesInFile ::
+    GHC.Base.String -> GHC.Types.IO GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Countlines.countLines4
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Integer.Type.Integer>_R)) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
